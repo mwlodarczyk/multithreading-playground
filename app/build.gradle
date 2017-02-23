@@ -1,0 +1,23 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.mwlodarczyk.multithreading"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.jsoup:jsoup:1.10.1'
+    testCompile 'com.google.guava:guava:21.0'
+    testCompile 'org.mockito:mockito-core:2.1.0'
+}
