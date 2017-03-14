@@ -10,7 +10,7 @@
  *
  */
 
-package com.tomtom.multithreading.stackoverflow;
+package com.mwlodarczyk.multithreading.stackoverflow;
 
 import org.jsoup.nodes.Document;
 

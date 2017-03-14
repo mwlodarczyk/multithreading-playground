@@ -14,17 +14,13 @@
  * * limitations under the License.
  */
 
-package com.tomtom.multithreading.mvp.login;
+package com.mwlodarczyk.multithreading.mvp.main;
 
-public interface LoginView {
+public interface MainPresenter {
 
-    void showProgress();
+    void onResume();
 
-    void hideProgress();
+    void onItemClicked(int position);
 
-    void setUsernameError();
-
-    void setPasswordError();
-
-    void navigateToHome();
+    void onDestroy();
 }

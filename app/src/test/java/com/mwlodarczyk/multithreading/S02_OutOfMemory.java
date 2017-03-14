@@ -1,5 +1,6 @@
-package com.tomtom.multithreading;
+package com.mwlodarczyk.multithreading;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.concurrent.atomic.AtomicInteger;
@@ -7,6 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class S02_OutOfMemory {
 
     @Test
+    @Ignore
     public void lotsOfThreads() {
         final AtomicInteger counter = new AtomicInteger();
         while (true) {

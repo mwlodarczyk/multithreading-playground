@@ -1,4 +1,4 @@
-package com.tomtom.multithreading;
+package com.mwlodarczyk.multithreading;
 
 import org.junit.Test;
 
@@ -22,8 +22,15 @@ public class S06_Locks {
     }
 
     private void incrementAndPrint() {
+
         counter++;
         System.out.println("Counter: " + counter + " at: " + Thread.currentThread().getName());
+
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     class Worker implements Runnable {

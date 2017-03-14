@@ -14,18 +14,17 @@
  * * limitations under the License.
  */
 
-package com.tomtom.multithreading.mvp.login;
+package com.mwlodarczyk.multithreading.mvp.main;
 
-public interface LoginInteractor {
+import java.util.List;
 
-    interface OnLoginFinishedListener {
-        void onUsernameError();
+public interface MainView {
 
-        void onPasswordError();
+    void showProgress();
 
-        void onSuccess();
-    }
+    void hideProgress();
 
-    void login(String username, String password, OnLoginFinishedListener listener);
+    void setItems(List<String> items);
 
+    void showMessage(String message);
 }

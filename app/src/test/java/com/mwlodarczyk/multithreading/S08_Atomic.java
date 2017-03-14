@@ -1,7 +1,8 @@
-package com.tomtom.multithreading;
+package com.mwlodarczyk.multithreading;
 
 import org.junit.Test;
 
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class S08_Atomic {
@@ -26,6 +27,7 @@ public class S08_Atomic {
 
     @Test
     public void atomicLong() throws InterruptedException {
+
         AtomicLong atomicLong = new AtomicLong(123);
 
         long expectedValue = 123;

@@ -14,7 +14,7 @@
  * * limitations under the License.
  */
 
-package com.tomtom.multithreading.mvp.login;
+package com.mwlodarczyk.multithreading.mvp.login;
 
 import android.os.Handler;
 import android.text.TextUtils;

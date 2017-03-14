@@ -1,4 +1,4 @@
-package com.tomtom.multithreading;
+package com.mwlodarczyk.multithreading;
 
 import org.junit.Test;
 
@@ -6,10 +6,11 @@ import org.junit.Test;
 //Just one exception to explain why it should not be used
 public class S04_Synchronization {
 
+    private Object lock;
     private static int counter = 0;
 
     private void print(){
-        synchronized(this){
+        synchronized(lock){
             execute();
         }
     }
@@ -53,6 +54,7 @@ public class S04_Synchronization {
 
         thread.start();
         refThread.start();
+
         try {
             thread.join();
             refThread.join();

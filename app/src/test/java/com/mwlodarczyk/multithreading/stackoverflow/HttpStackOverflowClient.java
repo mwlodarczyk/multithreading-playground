@@ -10,7 +10,7 @@
  *
  */
 
-package com.tomtom.multithreading.stackoverflow;
+package com.mwlodarczyk.multithreading.stackoverflow;
 
 import com.google.common.base.Throwables;
 

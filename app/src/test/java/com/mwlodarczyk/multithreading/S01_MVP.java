@@ -1,8 +1,8 @@
-package com.tomtom.multithreading;
+package com.mwlodarczyk.multithreading;
 
-import com.tomtom.multithreading.mvp.main.FindItemsInteractor;
-import com.tomtom.multithreading.mvp.main.MainPresenterImpl;
-import com.tomtom.multithreading.mvp.main.MainView;
+import com.mwlodarczyk.multithreading.mvp.main.FindItemsInteractor;
+import com.mwlodarczyk.multithreading.mvp.main.MainPresenterImpl;
+import com.mwlodarczyk.multithreading.mvp.main.MainView;
 
 import org.junit.Before;
 import org.junit.Test;

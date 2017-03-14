@@ -1,4 +1,4 @@
-package com.tomtom.multithreading.utils;
+package com.mwlodarczyk.multithreading.utils;
 
 public class BoundedSemaphore {
 

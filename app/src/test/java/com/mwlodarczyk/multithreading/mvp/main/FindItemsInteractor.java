@@ -14,7 +14,7 @@
  * * limitations under the License.
  */
 
-package com.tomtom.multithreading.mvp.main;
+package com.mwlodarczyk.multithreading.mvp.main;
 
 import java.util.List;
 

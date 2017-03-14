@@ -16,7 +16,7 @@
  *
  */
 
-package com.tomtom.multithreading.mvp.login;
+package com.mwlodarczyk.multithreading.mvp.login;
 
 public interface LoginPresenter {
 

@@ -1,4 +1,4 @@
-package com.tomtom.multithreading;
+package com.mwlodarczyk.multithreading;
 
 import org.junit.Test;
 

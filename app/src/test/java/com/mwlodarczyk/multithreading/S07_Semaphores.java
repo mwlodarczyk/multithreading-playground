@@ -1,10 +1,8 @@
-package com.tomtom.multithreading;
+package com.mwlodarczyk.multithreading;
 
 import org.junit.Test;
 
 import java.io.IOException;
-import java.net.URL;
-import java.net.URLConnection;
 import java.util.concurrent.Semaphore;
 
 public class S07_Semaphores {
@@ -44,7 +42,7 @@ public class S07_Semaphores {
                     Thread.sleep(5000);
 
                     limiter.release();
-                    System.out.println("Releasing connection for thread: "  + Thread.currentThread().getId());
+                    System.out.println("Releasing connection for thread: " + Thread.currentThread().getId());
 
                 } catch (InterruptedException e) {
                     e.printStackTrace();
