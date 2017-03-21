@@ -5,7 +5,6 @@ import org.junit.Test;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-
 public class S09_EvenOdd {
 
     class Printer implements Runnable {
