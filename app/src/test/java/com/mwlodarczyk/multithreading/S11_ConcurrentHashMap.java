@@ -45,10 +45,7 @@ public class S11_ConcurrentHashMap {
                 });
             }
 
-            // Make sure executor stops
             executorService.shutdown();
-
-            // Blocks until all tasks have completed execution after a shutdown request
             executorService.awaitTermination(Long.MAX_VALUE, TimeUnit.DAYS);
 
             long entTime = System.nanoTime();
