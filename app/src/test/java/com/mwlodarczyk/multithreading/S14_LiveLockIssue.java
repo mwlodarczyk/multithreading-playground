@@ -11,10 +11,6 @@ public class S14_LiveLockIssue {
             owner = d;
         }
 
-        public Diner getOwner() {
-            return owner;
-        }
-
         public synchronized void setOwner(Diner d) {
             owner = d;
         }
