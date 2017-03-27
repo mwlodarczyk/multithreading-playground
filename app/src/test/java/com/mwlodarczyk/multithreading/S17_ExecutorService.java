@@ -6,7 +6,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class S16_ExecutorService {
+public class S17_ExecutorService {
 
     @Test
     public void singleThreadExecutor() throws InterruptedException {

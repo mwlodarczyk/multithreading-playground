@@ -33,6 +33,14 @@ public class S04_Synchronization {
         execute();
     }
 
+    private static final String LOCK = "LOCK";
+
+    public void synchronizedStaticStringLock() {
+        synchronized(LOCK) {
+            execute();
+        }
+    }
+
     private static void execute(){
         for (int i = 0; i <= 10; i++) {
             System.out.println("Printing: " + i + " on thread: " + Thread.currentThread().getId());

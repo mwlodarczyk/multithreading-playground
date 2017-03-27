@@ -27,7 +27,6 @@ public class S12_DoubleCheckLocking {
         private Helper helper = null;
 
         public synchronized Helper getHelper() {
-
             if (helper == null) {
                 helper = new Helper();
             }

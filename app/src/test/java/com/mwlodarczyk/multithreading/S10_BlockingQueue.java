@@ -23,7 +23,7 @@ public class S10_BlockingQueue {
             for (int i = 0; i < 10; i++) {
                 String msg = Integer.toString(i);
                 try {
-                    Thread.sleep(1);
+                    Thread.sleep(100);
                     queue.put(msg);
                     System.out.println("Produced " + msg);
                 } catch (InterruptedException e) {
@@ -56,7 +56,7 @@ public class S10_BlockingQueue {
                 String msg;
 
                 while ((msg = queue.take()) != EXIT_MSG) {
-                    Thread.sleep(500);
+                    Thread.sleep(10);
                     System.out.println("Consumed " + msg);
                 }
             } catch (InterruptedException e) {
