@@ -1,21 +1,28 @@
 apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
 
 android {
 
-    compileSdkVersion 23
+    compileSdkVersion 25
     buildToolsVersion "23.0.2"
 
     defaultConfig {
         applicationId "com.mwlodarczyk.multithreading"
-        minSdkVersion 16
-        targetSdkVersion 22
+        minSdkVersion 25
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
+    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    
     testCompile 'junit:junit:4.12'
     testCompile 'org.jsoup:jsoup:1.10.1'
     testCompile 'com.google.guava:guava:21.0'

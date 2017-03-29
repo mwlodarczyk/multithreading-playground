@@ -38,7 +38,7 @@ public class MainPresenterImpl implements MainPresenter, FindItemsInteractor.OnF
 
     @Override public void onItemClicked(int position) {
         if (mainView != null) {
-            mainView.showMessage(String.format("Position %d clicked", position + 1));
+            mainView.showMessage("Position " + (position + 1) + " clicked");
         }
     }
 
