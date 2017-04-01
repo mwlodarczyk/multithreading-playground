@@ -45,8 +45,7 @@ public class S24_AsyncCallback extends AbstractFuturesTest {
 
         first.thenAccept(q -> System.out.println("Sync: " + q));
         first.thenAcceptAsync(q -> System.out.println("Async: " + q));
-        first.thenAcceptAsync(q -> System.out.println("Async (pool): " + q),
-                poolGamma);
+        first.thenAcceptAsync(q -> System.out.println("Async (pool): " + q), poolGamma);
         first.get();        //block
     }
 

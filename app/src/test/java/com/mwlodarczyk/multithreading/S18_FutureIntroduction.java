@@ -46,6 +46,23 @@ public class S18_FutureIntroduction extends AbstractFuturesTest {
         final Future<String> scala = findQuestionsAbout("scala");
 
         //???
+        final String javaResult = java.get();
+        final String scalaResult = scala.get();
+
+        //Loop with small time
+        //ExecutorCompletionService<String>;
+
+    }
+
+
+    /**
+     * Composing is impossible
+     */
+    @Test
+    public void runWhenFirstFinished() throws Exception {
+        final Future<String> java = findQuestionsAbout("java");
+        final Future<String> scala = findQuestionsAbout("scala");
+        //???
     }
 
     private Future<String> findQuestionsAbout(String tag) {

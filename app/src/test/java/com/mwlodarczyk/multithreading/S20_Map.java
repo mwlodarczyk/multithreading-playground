@@ -41,18 +41,19 @@ public class S20_Map extends AbstractFuturesTest {
     public void callbacksCallbacksEverywhere() throws Exception {
         final CompletableFuture<Document> java =
                 CompletableFuture.supplyAsync(() ->
-                                client.mostRecentQuestionsAbout("java"),
-                        executorService
+                    client.mostRecentQuestionsAbout("java"),
+                    executorService
                 );
 
         java.thenAccept(document -> System.out.println("Downloaded: " + document));
+        System.out.println("Finished");
     }
 
     @Test
     public void thenApply() throws Exception {
         final CompletableFuture<Document> java =
                 CompletableFuture.supplyAsync(() ->
-                                client.mostRecentQuestionsAbout("java"),
+                    client.mostRecentQuestionsAbout("java"),
                         executorService
                 );
 

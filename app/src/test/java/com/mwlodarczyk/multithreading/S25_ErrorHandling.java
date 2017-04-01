@@ -15,7 +15,7 @@ import org.junit.Test;
 
 import java.util.concurrent.CompletableFuture;
 
-public class S25_ErrorHandling extends AbstractFuturesTest {
+public class  S25_ErrorHandling extends AbstractFuturesTest {
 
     @Test
     public void exceptionsShortCircuitFuture() throws Exception {

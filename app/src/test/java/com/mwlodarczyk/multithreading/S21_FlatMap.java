@@ -21,10 +21,8 @@ public class S21_FlatMap extends AbstractFuturesTest {
 
     @Test
     public void thenApplyIsWrong() throws Exception {
-        final CompletableFuture<CompletableFuture<Question>> future =
-                javaQuestions()
-                        .thenApply(doc ->
-                                findMostInterestingQuestion(doc));
+        CompletableFuture<CompletableFuture<Question>> result
+                = javaQuestions().thenApply(doc -> findMostInterestingQuestion(doc));
     }
 
     @Test

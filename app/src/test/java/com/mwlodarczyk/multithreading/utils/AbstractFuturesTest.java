@@ -61,9 +61,7 @@ public class AbstractFuturesTest {
     }
 
     protected CompletableFuture<String> questions(String tag) {
-        return CompletableFuture.supplyAsync(() ->
-                        client.mostRecentQuestionAbout(tag),
-                executorService);
+        return CompletableFuture.supplyAsync(() -> client.mostRecentQuestionAbout(tag), executorService);
     }
 
 }

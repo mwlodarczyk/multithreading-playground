@@ -33,10 +33,9 @@ public class S19_FutureCreating extends AbstractFuturesTest {
      */
     @Test
     public void supplyAsync() throws Exception {
-        final CompletableFuture<String> java =
-                CompletableFuture.supplyAsync(() ->
-                        client.mostRecentQuestionAbout("java")
-                );
+        final CompletableFuture<String> java = CompletableFuture.supplyAsync(() ->
+                client.mostRecentQuestionAbout("java")
+        );
         System.out.println("Found: " + java.get());
     }
 
